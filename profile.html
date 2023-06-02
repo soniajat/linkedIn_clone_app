@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LinkedIn Clone</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png">
+            </a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+            <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+        </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/sonia.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+<!--profile drop down memu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/sonia.jpeg">
+                    <div>
+                        <h3>Sonia Jat</h3>
+                        <a href="profile.html">view my Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+    <!--navbar close-->
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <img src="images/cover_page.jpeg" width="100%">
+                <div class="profile-container-inner">
+                    <img src="images/sonia.jpeg" class="profile-pic">
+                    <h1>Sonia Jat</h1>
+                    <b>Front-end Developer</b>
+                    <p>Rajasthan, India &middot; <a href="#">Contact Info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-2.png">
+                        <span>1 mutual-connection: Orlando Jacobs</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png">Connect</a>
+                        <a href="#"><img src="images/message.png">Message</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>Aspiring Front-end Developer</p>
+                <a href="#" class="see-more-link">See more...</a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Education</h2>
+                <div class="profile-disc-row">
+                    <img src="images/ctae_logo.png">
+                    <div>
+                        <b>College of Technology and Engineering</b>
+                        <h3>Bachelor of Technology- BTech, Computer Science</h3>
+                        <b>2020-2024</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-disc-row">
+                    <img src="images/teresa_logo.jpg">
+                    <div>
+                        <b>St. Teresa Vidya deep senior secondary school</b>
+                        <h3>CBSE PCM class 12</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="profile-description">
+                <h2>Licensce and Certifications</h2>
+                <div class="profile-disc-row">
+                    <img src="images/internshala_logo.png">
+                    <div>
+                        <b>Programming with Python</b>
+                        <h4>Internshala</h4>
+                        <a href="#" class="skills-btn">Show credentials</a>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-disc-row">
+                    <img src="images/internshala_logo.png">
+                    <div>
+                        <b>Training</b>
+                        <h4>Internshala</h4>
+                        <a href="#" class="skills-btn">Show credentials</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="skill-links">Show all Certifications <img src="images/right-arrow.png"></a>
+            </div>
+
+            <div class="profile-description">
+                <h2>Skills</h2>
+                <a href="#" class="skills-btn">Cascading Style Sheets</a>
+                <a href="#" class="skills-btn">HTML</a>
+                <a href="#" class="skills-btn">English</a>
+                <a href="#" class="skills-btn">JavaScript</a>
+                <a href="#" class="skills-btn">Python</a>
+                <a href="#" class="skills-btn">C++</a>
+                <hr>
+                <a href="#" class="skill-links">Show all skills <img src="images/right-arrow.png"></a>
+            </div>
+            
+
+            
+
+        </div>
+
+
+
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot;&middot;&middot;</small>
+                <p>You've got the skills, we've got the opportunities</p>
+                <div>
+                    <img src="images/sonia.jpeg">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Sonia, aramco is hiring!</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h2>Samuel johns</h2>
+                        <p>HR at AppFoundation</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h2>Mark Haydes</h2>
+                        <p>CEO at AppFoundation</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h2>Samantha Rose</h2>
+                        <p>Marketing Executive at Secure Limited</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-1.png">
+                    <div>
+                        <h2>Christian King</h2>
+                        <p>COO at Grey Corp</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h2>Antonia Charles</h2>
+                        <p>Manager at Grey Corp</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services </a>
+            <a href="#">Get the LinkedIn app</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>LinkedIn Corporation © 2023</p>
+            </div>
+        </div>
+    </div>
+
+
+        <script>
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+</html>
+
+

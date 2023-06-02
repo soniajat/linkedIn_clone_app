@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LinkedIn Clone</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png">
+            </a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+        <ul>
+            <li><a href="#" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+            <li><a href="#"><img src="images/network.png"><span>My Network</span></a></li>
+            <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+            <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+            <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+        </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/sonia.jpeg" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+<!--profile drop down memu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/sonia.jpeg">
+                    <div>
+                        <h3>Sonia Jat</h3>
+                        <a href="profile.html">view my Profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png">
+                    <p>Display & Accessibility</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+
+
+    </nav>
+    <!--navbar close-->
+    <div class="container">
+        <div class="left-sidebar">
+            <div class="sidebar-profile-box">
+                <img src="images/cover_page.jpeg" width="100%">
+                <div class="sidebar-profile-info">
+                    <img src="images/sonia.jpeg">
+                    <h1>Sonia Jat</h1>
+                    <h3>Front-end Developer</h3>
+                    <ul>
+                        <li>Who's viewed your profile<span>161</span></li>
+                        <li>Connections<span>245</span></li>
+                    </ul>
+                </div>
+                <div class="sidevar-profile-link">
+                    <a href=""><img src="images/items.png">My items</a>
+                    <a href=""><img src="images/premium.png">Try Premium</a>
+                </div>
+            </div>
+            <div class="sidebar-activity">
+                <h3>Recent</h3>
+                <a href="#"><img src="images/recent.png">The Sparks Foundation Network</a>
+                <a href="#"><img src="images/recent.png">hashtagthesparkfoundation</a>
+                <a href="#"><img src="images/recent.png">Android | Flutter Development (Learning)</a>
+                <a href="#"><img src="images/recent.png">AgTech and FoodTech</a>
+                <a href="#"><img src="images/recent.png">Personal Development , Wellnes</a>
+                
+                <h3>Groups</h3>
+                <a href="#"><img src="images/group.png">The Sparks Foundation Network</a>
+                <a href="#"><img src="images/group.png">Android | Flutter Development (Learning)</a>
+                <a href="#"><img src="images/group.png">AgTech and FoodTech</a>
+                <a href="#"><img src="images/group.png">Python Developers Community (moderated)</a>
+                <a href="#"><img src="images/group.png">Java Developers Community (moderated)</a>
+                <a href="#"><img src="images/group.png">Microsoft Learn Student AmbassadorsSee all</a>
+
+                <h3>HASHTAG</h3>
+                <a href="#"><img src="images/hashtag.png">thesparkfoundation</a>
+                <a href="#"><img src="images/hashtag.png">wendevelopment</a>
+                <a href="#"><img src="images/hashtag.png">userinterface</a>
+                <a href="#"><img src="images/hashtag.png">onlineLearning</a>
+                <div class="discover-more-link">
+                    <a href="#">Discover More</a>
+                </div>
+            </div>
+        </div>
+        <!------------left-sidebar--------->
+        <div class="main-content">
+            <div class="create-post">
+                <div class="create-post-input">
+                    <img src="images/sonia.jpeg">
+                    <textarea rows="2" placeholder="write a post"></textarea>
+                </div>
+                <div class="create-post-links">
+                    <li><img src="images/photo.png">Photo</li>
+                    <li><img src="images/video.png">Video</li>
+                    <li><img src="images/event.png">Event</li>
+                    <li>Post</li>
+                </div>
+            </div>
+            <div class="sort-by">
+                <hr>
+                <p>sort by: <span>top <img src="images/down-arrow.png" alt=""></span></p>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-3.png">
+                    <div>
+                        <h1>Meghan Sparkle</h1>
+                        <small>Founder and CEO at Secure Founadtions | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>To strengthen the collaboration between industry and academia, we organise the Vikram Awards. The award encourages young #engineers to generate innovative #ideas and adopt new problem-solving approaches to make a difference in the life around, us and ester mechanical students of Nirma University, Ahmedabad, Gujarat, India, who showcased their cost-effective problem-solving projects.</p>
+                <img src="images/post-image-1.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-4.png">
+                    <div>
+                        <h1>Cameron King</h1>
+                        <small>Founder and CEO at AppKnowledge | angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>To strengthen the collaboration between industry and academia, we organise the Vikram Awards. The award encourages young #engineers to generate innovative #ideas and adopt new problem-solving approaches to make a difference in the life around, us and ester mechanical students of Nirma University, Ahmedabad, Gujarat, India, who showcased their cost-effective problem-solving projects.</p>
+                <img src="images/post-image-2.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-5.png">
+                    <div>
+                        <h1>Meghan Sparkle</h1>
+                        <small>Founder and CEO at Secure Founadtions | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>To strengthen the collaboration between industry and academia, we organise the Vikram Awards. The award encourages young #engineers to generate innovative #ideas and adopt new problem-solving approaches to make a difference in the life around, us and ester mechanical students of Nirma University, Ahmedabad, Gujarat, India, who showcased their cost-effective problem-solving projects.</p>
+                <img src="images/post-image-3.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="post">
+                <div class="post-author">
+                    <img src="images/user-2.png">
+                    <div>
+                        <h1>Meghan Sparkle</h1>
+                        <small>Founder and CEO at Secure Founadtions | Angel Investor</small>
+                        <small>2 hours ago</small>
+                    </div>
+                </div>
+                <p>To strengthen the collaboration between industry and academia, we organise the Vikram Awards. The award encourages young #engineers to generate innovative #ideas and adopt new problem-solving approaches to make a difference in the life around, us and ester mechanical students of Nirma University, Ahmedabad, Gujarat, India, who showcased their cost-effective problem-solving projects.</p>
+                <img src="images/post-image-4.png" width="100%">
+
+                <div class="post-stats">
+                    <div>
+                        <img src="images/thumbsup.png">
+                        <img src="images/love.png">
+                        <img src="images/clap.png">
+                        <span class="liked-users">Abhinav mishra and 75 others</span>
+                    </div>
+                    <div>
+                        <span>22 comments &middot; 40 shares</span>
+                    </div>
+                </div>
+
+                <div class="post-activity">
+                    <div>
+                        <img src="images/user-1.png" class="post-activity-user-icon">
+                        <img src="images/down-arrow.png" class="post-activity-arrow-icon">
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/like.png">
+                        <span>Like</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/comment.png">
+                        <span>Comment</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/share.png">
+                        <span>Share</span>
+                    </div>
+                    <div class="post-activity-link">
+                        <img src="images/send.png">
+                        <span>Send</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+<!------------main-content--------->
+
+ <!------------right-sidebar--------->
+        <div class="right-sidebar">
+        <div class="sidebar-news">
+            <img src="images/more.png" class="info-icon">
+            <h3>Trending News</3>
+            <a href="#">Tata Technologies to hire 1,000 women</a>
+            <span>1d ago &middot; 39,796 readers</span>
+
+            <a href="#">The future of hiring for SMBs</a>
+            <span>2d ago &middot; 1222 readers</span>
+
+            <a href="#">This week in newsletters</a>
+            <span>2d ago &middot; 1709 readers</span>
+
+            <a href="#">The rise of partnerships in finance</a>
+            <span>3d ago &middot; 4327 readers</span>
+
+            <a href="#">FMCG firms bet big on rural India</a>
+            <span>3d ago &middot; 1067 readers</span>
+
+            <a href="#">Atomberg raises $82 million</a>
+            <span>21h ago &middot; 567 readers</span>
+
+            <a href="#" class="read-more-link">Read More</a>
+        </div>
+
+        <div class="sidebar-ad">
+            <small>Ad &middot;&middot;&middot;</small>
+            <p>You've got the skills, we've got the opportunities</p>
+            <div>
+                <img src="images/sonia.jpeg">
+                <img src="images/mi-logo.png">
+            </div>
+            <b>Sonia, aramco is hiring!</b>
+            <a href="#" class="ad-link">Learn More</a>
+        </div>
+
+        <div class="sidebar-useful-links">
+            <a href="#">About</a>
+            <a href="#">Accessibility</a>
+            <a href="#">Help Center</a>
+            <a href="#">Privacy & Terms</a>
+            <a href="#">Ad Choices</a>
+            <a href="#">Advertising</a>
+            <a href="#">Business Services </a>
+            <a href="#">Get the LinkedIn app</a>
+            <a href="#">More</a>
+
+            <div class="copyright-msg">
+                <img src="images/logo.png">
+                <p>LinkedIn Corporation © 2023</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+    </script>
+
+</body>
+</html>
+
+
